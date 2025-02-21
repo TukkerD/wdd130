@@ -2,9 +2,9 @@
 
 :root {
     --primary-color: #264653;
-    --secondary-color: #2A9D8F;
-    --accent1-color: #E9C46A;
-    --accent2-color: #e76f51;
+    --secondary-color: #2A9D8F; /* Teal color */
+    --accent1-color: #E9C46A; /* Yellowish color */
+    --accent2-color: #e76f51; /* Coral color */
 
     --heading-font: "Knewave";
     --paragraph-font: Nunito, Helvetica, sans-serif;
@@ -76,7 +76,7 @@ nav a:hover {
 
 #hero-msg {
     position: absolute;
-    top: 50%;
+    top: 20%; /* Move up way more (20% from the top) */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -86,6 +86,12 @@ nav a:hover {
 .home-title {
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
+    font-size: 3em; /* Make the text larger */
+}
+
+#hero-msg h4 {
+    font-size: 1.5em; /* Make the "Make Memories" text larger */
+    margin-top: 10px; /* Add spacing between the title and subtitle */
 }
 
 .button-box {
@@ -96,8 +102,9 @@ nav a:hover {
     background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increase button size */
     border-radius: 5px;
+    font-size: 1.2em; /* Make the "Book Now" text larger */
 }
 
 .book:hover, .join:hover {
@@ -105,31 +112,75 @@ nav a:hover {
     color: var(--headline-color-on-color);
 }
 
+/* Bottom Half Styles */
 .home-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    margin-top: 40px; /* Add spacing between hero and bottom half */
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    background-color: var(--accent1-color); /* Yellowish color (#E9C46A) */
+    padding: 20px; /* Add padding around the photos */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 .card-img {
     width: 100%;
+    border-radius: 10px; /* Add rounded corners to images */
 }
 
 .icon {
     width: 80px;
+    margin-top: 10px; /* Add spacing between image and icon */
 }
 
-#background {
-    height: 725px;
-    background-color: var(--accent1-color);
+/* Mountains Image */
+.mountains {
+    width: 150%; /* Make the image 1.5x wider */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners to mountains image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    margin-top: 40px; /* Add spacing between cards and mountains */
+    position: relative; /* Make it a positioning context */
+    left: -300px; /* Move the image to the left by 200px */
 }
 
 .msg {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Teal color (#2A9D8F) */
     padding: 20px;
     color: white;
     text-align: center;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    margin-top: 40px; /* Add spacing between mountains and message */
+}
+
+.msg h2 {
+    font-size: 2em; /* Make the heading larger */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.msg p {
+    font-size: 1.2em; /* Make the paragraph text larger */
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+}
+
+.join {
+    font-size: 1.2em; /* Make the "Join Us" text larger */
+    padding: 15px 30px; /* Increase button size */
+    background-color: var(--accent2-color); /* Coral color (#E76F51) */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.join:hover {
+    background-color: var(--accent1-color); /* Yellowish color (#E9C46A) on hover */
 }
 
 footer {
