@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
-        /* General styles for the page */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,7 +31,7 @@
             width: 100%;
         }
 
-        /* Form styling */
+       
         form {
             max-width: 600px;
             margin: 0 auto;
@@ -74,7 +74,7 @@
             left: 0;
             right: 0;
             padding: .5em;
-            display: none; /* Hide the element initially */
+            display: none; 
         }
         .moveDown {
             margin-top: 3em;
@@ -87,7 +87,7 @@
     </header>
 
     <main>
-        <div id="feedback"></div> <!-- Feedback message will appear here -->
+        <div id="feedback"></div>
 
         <form>
             <label for="name">Name:</label>
@@ -104,7 +104,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Rafting Site</p>
+        <p>&copy; 2023 Dry Oar Boating</p>
     </footer>
 
     <script>
@@ -113,10 +113,10 @@
         const formElement = document.forms[0];
 
         formElement.addEventListener('submit', function(e) {
-            e.preventDefault(); // Stop the form from submitting
+            e.preventDefault(); 
             feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back to you soon!';
-            feedbackElement.style.display = "block"; // Show the feedback message
-            document.body.classList.toggle('moveDown'); // Move content down
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown'); 
         });
     </script>
 </body>
