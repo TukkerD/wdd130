@@ -20,12 +20,15 @@
   --nav-hover-background-color: #03045E;
 }
 
+/* General Styles */
 body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  background-color: var(--accent2-color);
+  font-family: var(--paragraph-font);
 }
 
 img {
@@ -49,6 +52,7 @@ hr {
   background: var(--accent1-color);
 }
 
+/* Header Styles */
 header {
   padding: 1em;
   text-align: center;
@@ -60,42 +64,11 @@ header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 
+/* Paragraph Styles */
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
-}
-
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.colors th {
-  background-color: #999;
-}
-
-.colors td {
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-
-.secondary {
-  background-color: var(--secondary-color);
-}
-
-.accent1 {
-  background-color: var(--accent1-color);
-}
-
-.accent2 {
-  background-color: var(--accent2-color);
 }
 
 p.colored {
@@ -103,6 +76,48 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
+/* Color Palette Table */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.colors th {
+  background-color: #999;
+  padding: 10px;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+  color: #333;
+}
+
+/* Navigation Styles */
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
@@ -122,6 +137,7 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+/* Site Map Styles */
 .sitemap {
   display: grid;
   justify-content: center;
@@ -170,4 +186,13 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+/* Wireframes Section */
+.wireframes img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
